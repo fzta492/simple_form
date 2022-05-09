@@ -1,0 +1,17 @@
+.geral {
+    text-align:center;
+    background-image: url('./images/photo-1553095066-5014bc7b7f2d.jpg');
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    padding: 20px;
+    color: azure;
+}
+.ffo {
+    margin: 3px;
+    
+}
+.dname {
+    margin-right: 16px;
+}
