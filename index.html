@@ -1,27 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="geral">
-        <div class="form">
-            <h2>Form</h2>
-            <form action="https://formsubmit.co/flzeta7@gmail.com" method="POST">
-                <input type="hidden" name="_template" value="table">
-                <label for="text">Nome</label>
-                <input class="ffo" type="text" name="text" placeholder="Seu Nome"><br>
-                <label for="email">Email</label>
-                <input class="ffo" type="email" name="email" placeholder="Seu Email"><br>
-                <label for="number">Número</label>
-                <input class="ffo dname" type="number" name="number" placeholder="Seu número"><br>
-                <button type="submit">Enviar</button>
-            </form>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar bg-light pdd">
+        <div class="container-fluid">
+          <a class="navbar-brand">Cars</a>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
         </div>
+      </nav>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="true"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./images/c1.jpg"
+              class="d-block w-100"
+              alt="the first car"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/c2.jpg"
+              class="d-block w-100"
+              alt="the second car"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/c3.jpg"
+              class="d-block w-100"
+              alt="the third car"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="mb-3 pdd">
+        <label for="seunome" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="seunome" placeholder="Digite seu nome...">
+      </div>
+      <div class="mb-3 pdd">
+        <label for="Textarea1" class="form-label">Fale conosco</label>
+        <textarea class="form-control" id="Textarea1" rows="3"></textarea>
+      </div>
+      <button type="button" class="btn btn-dark pdd" type="submit" value="Submit">Enviar</button>
     </div>
-</body>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
